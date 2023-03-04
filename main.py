@@ -32,8 +32,8 @@ def sidebar_content():
     image = Image.open('images/stack_overflow_logo.png')
     st.sidebar.image(image)
 
-    dataset_name = st.sidebar.selectbox("Select Dataset", ("StackSample"))
-    classifier_name = st.sidebar.selectbox("Select Classifier", ("OneVsRestClassifier"))
+    dataset_name = st.sidebar.selectbox("Select Dataset", ("StackSample", "empty"))
+    classifier_name = st.sidebar.selectbox("Select Classifier", ("OneVsRestClassifier", "empty"))
     return dataset_name, classifier_name
 
 dataset_name, classifier_name = sidebar_content()
