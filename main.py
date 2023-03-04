@@ -29,7 +29,7 @@ st.write("""
 
 def sidebar_content():
     # showing stack overflow logo
-    image = Image.open('images\stack_overflow_logo.png')
+    image = Image.open('images/stack_overflow_logo.png')
     st.sidebar.image(image)
 
     dataset_name = st.sidebar.selectbox("Select Dataset", ("StackSample"))
